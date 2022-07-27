@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: mockoon
-          image: osamu1908/mockoon-mocks:latest
+          image: osamu1908/mockoon-mocks:1.0
           ports:
             - containerPort: 3000
