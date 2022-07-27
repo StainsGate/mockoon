@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mockoon
+spec:
+  selector:
+    matchLabels:
+      app: mockoon
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mockoon
+    spec:
+      containers:
+        - name: mockoon
+          image: osamu1908/mockoon-mocks:latest
+          ports:
+            - containerPort: 3000
+            - containerPort: 3001
+            - containerPort: 3002
