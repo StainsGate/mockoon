@@ -7,18 +7,7 @@ spec:
   selector:
     app: mockoon
   ports:
-    - name: mise1
-      port: 8000
-      protocol: TCP
+    - protocol: TCP
+      port: 3000
       targetPort: 3000
-      nodePort: 30000
-    - name: mise2
-      port: 8001
-      protocol: TCP
-      targetPort: 3001
-      nodePort: 30001
-    - name: mise3
-      port: 8002
-      protocol: TCP
-      targetPort: 3002
-      nodePort: 30002
+      nodePort: 30100
