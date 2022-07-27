@@ -9,3 +9,12 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
+      name: mise1
+    - protocol: TCP
+      port: 3001
+      targetPort: 3001
+      name: mise2
+    - protocol: TCP
+      port: 3002
+      targetPort: 3002
+      name: mise3
